@@ -1,0 +1,85 @@
+{
+	"name": "break-time",
+	"displayName": "Break Time",
+	"description": "",
+	"publisher": "Lorenzo-Lupetti",
+	"author": {
+		"name": "Lorenzo Lupetti"
+	},
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Lupetti-Lorenzo/Easy-Timer"
+	},
+	"galleryBanner": {
+		"color": "#629cff",
+		"theme": "dark"
+	},
+	"keywords": [
+		"Timer",
+		"Stretch",
+		"Break",
+		"Time",
+		"Coffee"
+	],
+	"categories": [
+		"Other",
+		"Visualization"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"icon": "img/icon.png",
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [],
+		"configuration": {
+			"title": "Break Time",
+			"properties": {
+				"BreakTime.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable/Disable this extension."
+				},
+				"BreakTime.redText": {
+					"type": "string",
+					"default": "30 seconds",
+					"enum": [
+						"inactive",
+						"30 seconds",
+						"1 minute",
+						"2 minutes"
+					],
+					"description": "The last tot seconds are displayed red. (reload required)"
+				},
+				"BreakTime.endMessages": {
+					"type": "array",
+					"description": "Messages displayed randomly when is break time."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.15.0",
+		"@typescript-eslint/eslint-plugin": "^4.9.0",
+		"@typescript-eslint/parser": "^4.9.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.1.2",
+		"vscode-test": "^1.4.1"
+	}
+}

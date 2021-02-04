@@ -92,8 +92,8 @@ export class Timer {
 
 	private setEndMessages() {
 		const msg = this.config.endMessages;
-		console.log(msg);
-		if (msg && Array.isArray(msg)) {
+		if (msg[0] !== undefined && Array.isArray(msg)) {
+			//see if every element of the array is a string
 			let valid = true;
 			msg.forEach(m => {
 				if (typeof m !== "string") {

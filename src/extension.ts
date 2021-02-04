@@ -4,7 +4,7 @@ import { Timer } from "./Timer";
 export function activate({ subscriptions }: vscode.ExtensionContext) {
 	const config = vscode.workspace.getConfiguration("BreakTime"); //user configuration
 
-	if (config.enabled === true) {
+	if (config.enable === true) {
 		const timerStatusBarItem: vscode.StatusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 299);
 		const timerStatusBarTxt: string = `Next Break`;
 

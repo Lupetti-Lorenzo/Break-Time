@@ -1,7 +1,7 @@
 {
 	"name": "break-time",
 	"displayName": "Break Time",
-	"description": "",
+	"description": "Set a timer and a message to remind you to take a break!",
 	"publisher": "Lorenzo-Lupetti",
 	"author": {
 		"name": "Lorenzo Lupetti"
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Lupetti-Lorenzo/Easy-Timer"
+		"url": "https://github.com/Lupetti-Lorenzo/Break-Time"
 	},
 	"galleryBanner": {
 		"color": "#629cff",
@@ -39,7 +39,7 @@
 		"configuration": {
 			"title": "Break Time",
 			"properties": {
-				"BreakTime.enabled": {
+				"BreakTime.enable": {
 					"type": "boolean",
 					"default": true,
 					"description": "Enable/Disable this extension."
@@ -70,13 +70,13 @@
 		"lint": "eslint src --ext ts"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.52.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.4",
 		"@types/node": "^12.11.7",
-		"eslint": "^7.15.0",
+		"@types/vscode": "^1.52.0",
 		"@typescript-eslint/eslint-plugin": "^4.9.0",
 		"@typescript-eslint/parser": "^4.9.0",
+		"eslint": "^7.15.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.1.3",
 		"typescript": "^4.1.2",

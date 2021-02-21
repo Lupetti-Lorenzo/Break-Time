@@ -33,13 +33,14 @@ This extension will remind to take a break during your coding sessions.
 
 This extension contributes the following settings:
 
--   `BreakTime.enable`: enable/disable this extension
+-   `BreakTime.enable`: enable/disable this extension.
 -   `BreakTime.redText`: Set when the time will be displayed in red.
     ![](img/RedBreak.png)
+-   `BreakTime.showLastMinute`: Enable to see seconds last minute. Default will display <1 min.
 -   `BreakTime.endMessages`: custom your own messages to display when break time.
 
-        Example:
+          Example:
 
-        "BreakTime.endMessages": ["go take a walk!", "call the boss!", "stretch the leg!"]
+          "BreakTime.endMessages": ["go take a walk!", "call the boss!", "stretch the leg!"]
 
 ## **Enjoy!**

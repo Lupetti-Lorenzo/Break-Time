@@ -6,7 +6,7 @@
 	"author": {
 		"name": "Lorenzo Lupetti"
 	},
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
@@ -43,6 +43,11 @@
 					"type": "boolean",
 					"default": true,
 					"description": "Enable/Disable this extension."
+				},
+				"BreakTime.showLastMinute": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable to see seconds last minute. Default will display <1 min"
 				},
 				"BreakTime.redText": {
 					"type": "string",

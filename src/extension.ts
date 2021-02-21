@@ -10,7 +10,7 @@ export function activate({ subscriptions }: vscode.ExtensionContext) {
 
 		//Timer
 		const timer = new Timer(timerStatusBarItem, timerStatusBarTxt);
-		const timerCommandId: string = "BreackTime.start";
+		const timerCommandId: string = "BreakTime.start";
 
 		subscriptions.push(
 			vscode.commands.registerCommand(timerCommandId, () => {

@@ -47,7 +47,12 @@ export class Timer {
 			} else {
 				//decrease time and update the text in UI
 				this.currentTime--;
-				this.statusBarItem.text = `Break in: ${this.secToTime(this.currentTime)}`;
+				//check settings about last minute to display or not
+				if (this.currentTime <= 60 && this.config.showLastMinute === false) {
+					this.statusBarItem.text = `Break in: <1 min`;
+				} else {
+					this.statusBarItem.text = `Break in: ${this.secToTime(this.currentTime)}`;
+				}
 
 				//last tot sec display red text
 				const color: string = "firebrick";

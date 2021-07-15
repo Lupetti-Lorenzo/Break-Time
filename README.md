@@ -12,8 +12,6 @@ This extension will remind to take a break during your coding sessions.
 
 -A **quick pick** will show up, pick the time and a timer will be set.
 
-![](img/QuickPick.png)
-
 -In the status bar the extension will tell you the **time left** for break time.
 ![](img/BreakIn.png)
 
